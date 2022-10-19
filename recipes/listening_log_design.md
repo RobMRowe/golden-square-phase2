@@ -21,7 +21,7 @@ class MusicLog
   end
 
   def list
-    # Returns a list of artist+title pairs representing tracks played, most recent first
+    # Returns a list of strings representing tracks played, most recent first
   end
 end
 
@@ -41,6 +41,6 @@ music_log.list # => []
 music_log = MusicLog.new
 music_log.add_track("GUNSHIP", "Tech Noir")
 music_log.add_track("Starcadian", "Ultralove")
-music_log.list # => [["Starcadian", "Ultralove"], ["GUNSHIP", "Tech Noir"]]
+music_log.list # => ["Starcadian - Ultralove", "GUNSHIP - Tech Noir"]
 
 ```
